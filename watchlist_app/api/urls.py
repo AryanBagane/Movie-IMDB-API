@@ -1,7 +1,7 @@
 from django.urls import path, include
-from watchlist_app.api.views import movie_list, movie_details
+from watchlist_app.api.views import Movie_list, Movie_details
 
 urlpatterns = [
-    path('list/', movie_list, name='movie-list'),
-    path('<int:pk>', movie_details, name='movie-detail'),
+    path('list/', Movie_list, name='movie-list'),
+    path('<int:pk>', Movie_details, name='movie-detail'),
 ]
